@@ -1,0 +1,177 @@
+/***
+
+====================================================================
+Process Section
+====================================================================
+
+***/
+
+.process-section {
+	overflow: hidden;
+	padding: 120px 0 70px;
+
+	@include media-breakpoint-down(lg) {
+		padding: 60px 0 0;
+	}
+
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.process-block {
+	margin-bottom: 50px;
+	margin-top: 70px;
+	position: relative;
+	text-align: center;
+	z-index: 1;
+	&:before {
+		background-color: rgba(var(--theme-color-white-rgb), 0.2);
+		content: "";
+		height: 1px;
+		left: 0;
+		position: absolute;
+		top: -71px;
+		width: calc(100% + 24px);
+		@include media-breakpoint-down(xl) {
+			width: calc(100% + 0px);
+		}
+	}
+	&::after {
+		background-color: rgba(var(--theme-color-white-rgb), 0.2);
+		height: 70px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		content: "";
+		top: -70px;
+		width: 1px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		z-index: -1;
+	}
+	.step-btn {
+		background-color: var(--theme-color-black);
+		border-radius: 40px;
+		color: var(--theme-color-white);
+		padding: 5px 20px;
+		position: absolute;
+		rotate: -30deg;
+		text-align: center;
+		top: -111px;
+		left: 50%;
+		transform: translateX(-50%);
+		@include transition(all 300ms ease);
+		@include media-breakpoint-down(xl) {
+			rotate: 0deg;
+			top: -90px;
+		}
+	}
+
+	.inner-box {
+		background-color: var(--theme-color-black);
+		border: 1px solid var(--theme-color1-border);
+		border-radius: 30px;
+		overflow: hidden;
+		padding: 30px 30px 60px;
+		position: relative;
+		z-index: 1;
+		@include transition(all 300ms ease);
+		&:before {
+			background-color: #111111;
+			bottom: auto;
+			content: "";
+			clip-path: polygon(
+				382.68px 38.3898px,
+				382.68px 38.3898px,
+				337.615016px 41.5418496px,
+				302.562088px 50.0974128px,
+				275.598252px 62.7056112px,
+				254.800544px 78.0155664px,
+				238.246px 94.6764px,
+				224.011656px 111.3372336px,
+				210.174548px 126.6471888px,
+				194.811712px 139.2553872px,
+				176.000184px 147.8109504px,
+				151.817px 150.963px,
+				151.817px 150.963px,
+				125.9586136px 147.8109504px,
+				105.6682488px 139.2553872px,
+				89.0888972px 126.6471888px,
+				74.3635504px 111.3372336px,
+				59.6352px 94.6764px,
+				43.0468376px 78.0155664px,
+				22.7414548px 62.7056112px,
+				-3.1379568px 50.0974128px,
+				-36.4484056px 41.5418496px,
+				-79.0469px 38.3898px,
+				-79.0469px 38.3898px,
+				-76.0252837px 24.80746688px,
+				-67.2773136px 11.92290544px,
+				-53.2783079px -0.091483440000007px,
+				-34.5035848px -11.06329888px,
+				-11.4284625px -20.82014px,
+				15.4717408px -29.18960592px,
+				45.7217069px -35.99929576px,
+				78.8461176px -41.07680864px,
+				114.3696547px -44.24974368px,
+				151.817px -45.3457px,
+				151.817px -45.3457px,
+				189.26415px -44.24974368px,
+				224.78752px -41.07680864px,
+				257.91179px -35.99929576px,
+				288.16164px -29.18960592px,
+				315.06175px -20.82014px,
+				338.1368px -11.06329888px,
+				356.91147px -0.091483440000005px,
+				370.91044px 11.92290544px,
+				379.65839px 24.80746688px,
+				382.68px 38.3898px
+			);
+			height: 151px;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 100%;
+			z-index: -1;
+
+			@include media-breakpoint-down(md) {
+				clip-path: none;
+			}
+		}
+
+		.icon {
+			svg {
+				@include transition(all 900ms ease);
+				display: inline-block;
+			}
+		}
+		.title {
+			color: var(--theme-color-white);
+			margin-top: 100px;
+			margin-bottom: 20px;
+			@include transition(all 300ms ease);
+		}
+
+		.text {
+			margin-bottom: 0;
+		}
+	}
+
+	&:hover {
+		.step-btn {
+			background-color: var(--theme-color1);
+			color: #151414;
+		}
+		.icon {
+			svg {
+				-webkit-transform: rotateY(360deg);
+				transform: rotateY(360deg);
+			}
+		}
+	}
+}

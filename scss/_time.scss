@@ -1,0 +1,277 @@
+/***
+
+====================================================================
+    Time Section
+====================================================================
+
+***/
+
+.time-section {
+	position: relative;
+	z-index: 1;
+	margin-left: 12px;
+	margin-right: 12px;
+
+	.sec-title {
+		.sub-title {
+			background-color: var(--theme-color-white);
+		}
+
+	}
+
+	.outer-box {
+		max-width: 984px;
+		margin: 0 auto;
+		position: relative;
+		@include media-breakpoint-down(lg) {
+			max-width: 720px;
+			padding: 0 12px;
+		}
+	}
+	.sec-bg {
+		position: absolute;
+		bottom: -25px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		max-width: 1840px;
+		z-index: -1;
+		img {
+			width: 100%;
+		}
+	}
+
+	@include media-breakpoint-down(xxl) {
+		margin: 0;
+		padding-top: 0 !important;
+
+		.sec-bg {
+			display: none;
+		}
+	}
+}
+
+.time-block {
+	align-items: center;
+	background-color: var(--theme-color1);
+	display: flex;
+	mask-image: url(../images/mask/time-item-mask.png);
+	mask-repeat: no-repeat;
+	mask-size: cover;
+	mask-position: center;
+	max-width: 312px;
+	margin-bottom: 24px;
+	transition: 0.3s;
+	@include media-breakpoint-down(xl) {
+		justify-content: center;
+	}
+	@include media-breakpoint-down(lg) {
+		margin: 0 auto 24px;
+	}
+	.icon {
+		color: var(--theme-color3);
+		text-align: center;
+		width: 70px;
+		margin-right: 10px;
+		margin-left: 40px;
+		@include media-breakpoint-down(xl) {
+			margin-right: 10px;
+			margin-left: 20px;
+		}
+		.title {
+			margin-bottom: 0;
+			margin-top: 10px;
+			color: var(--theme-color2);
+			transition: 0.3s;
+			letter-spacing: -1.2px;
+		}
+		svg {
+			transition: 0.3s;
+		}
+	}
+	.content {
+		border-left: 1px solid rgba(12, 47, 37, 0.2);
+		padding: 20px 0;
+		padding-right: 35px;
+		@include media-breakpoint-down(xl) {
+			padding-right: 20px;
+		}
+		.title {
+			color: var(--theme-color2);
+			padding-left: 15px;
+			margin-bottom: 0;
+			transition: 0.3s;
+			span {
+				display: inline-block;
+				width: 70px;
+				color: inherit;
+			}
+			&:first-child {
+				border-bottom: 1px solid rgba(12, 47, 37, 0.2);
+				margin-bottom: 12px;
+				padding-bottom: 10px;
+			}
+		}
+	}
+	&:hover {
+		background-color: var(--theme-color3);
+		.icon {
+			svg {
+				transform: rotateY(180deg);
+				path {
+					fill: var(--theme-color1);
+				}
+			}
+			.title {
+				color: var(--theme-color1);
+			}
+		}
+		.content {
+			.title {
+				color: var(--theme-color-white);
+			}
+		}
+	}
+}
+
+/***
+
+====================================================================
+    Time Section Two
+====================================================================
+
+***/
+
+.time-section-two {
+	overflow: hidden;
+
+	.sec-title {
+		.sub-title {
+			background-color: rgba(var(--theme-color2-rgb), 0.2);
+			color: var(--theme-color-white);
+		}
+
+		.title {
+			color: var(--theme-color-white);
+		}
+	}
+
+	.outer-container {
+		max-width: 1600px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 1;
+		padding: 90px 0 25px;
+
+		.container-box {
+			max-width: 1150px;
+			margin: 0 auto;
+		}
+
+		.sec-bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.outer-box {
+		max-width: 984px;
+		position: relative;
+		@include media-breakpoint-down(lg) {
+			max-width: 720px;
+			padding: 0 12px;
+		}
+	}
+}
+
+.time-block-two {
+	align-items: center;
+	background-color: var(--theme-color-white);
+	display: flex;
+	mask-image: url(../images/mask/time-item-mask.png);
+	mask-repeat: no-repeat;
+	mask-size: cover;
+	mask-position: center;
+	max-width: 312px;
+	margin-bottom: 24px;
+	transition: 0.3s;
+	@include media-breakpoint-down(xl) {
+		justify-content: center;
+	}
+	@include media-breakpoint-down(lg) {
+		margin: 0 auto 24px;
+	}
+	.icon {
+		color: var(--theme-color3);
+		text-align: center;
+		width: 70px;
+		margin-right: 10px;
+		margin-left: 40px;
+		@include media-breakpoint-down(xl) {
+			margin-right: 10px;
+			margin-left: 20px;
+		}
+		.title {
+			margin-bottom: 0;
+			margin-top: 10px;
+			color: var(--theme-color2);
+			transition: 0.3s;
+			letter-spacing: -1.2px;
+		}
+		svg {
+			transition: 0.3s;
+		}
+	}
+	.content {
+		border-left: 1px solid rgba(12, 47, 37, 0.2);
+		padding: 20px 0;
+		padding-right: 35px;
+		@include media-breakpoint-down(xl) {
+			padding-right: 20px;
+		}
+		.title {
+			color: var(--theme-color2);
+			padding-left: 15px;
+			margin-bottom: 0;
+			transition: 0.3s;
+			span {
+				display: inline-block;
+				width: 70px;
+				color: inherit;
+			}
+			&:first-child {
+				border-bottom: 1px solid rgba(12, 47, 37, 0.2);
+				margin-bottom: 12px;
+				padding-bottom: 10px;
+			}
+		}
+	}
+	&:hover {
+		background-color: var(--theme-color3);
+		.icon {
+			svg {
+				transform: rotateY(180deg);
+				path {
+					fill: var(--theme-color1);
+				}
+			}
+			.title {
+				color: var(--theme-color1);
+			}
+		}
+		.content {
+			.title {
+				color: var(--theme-color-white);
+			}
+		}
+	}
+}

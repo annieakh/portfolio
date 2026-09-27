@@ -1,0 +1,61 @@
+/*** 
+
+====================================================================
+Section Title
+====================================================================
+
+***/
+
+.sec-title {
+	margin-bottom: 60px;
+
+	@include media-breakpoint-down(lg) {
+		margin-bottom: 40px;
+	}
+
+	.sub-title {
+		color: var(--sec-title-subtitle-color);
+		font-family: var(--sec-title-subtitle-font-family);
+		font-size: var(--sec-title-subtitle-font-size);
+		font-weight: var(--sec-title-subtitle-font-weight);
+		line-height: var(--sec-title-subtitle-line-height);
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+		gap: 8px;
+		text-transform: uppercase;
+	}
+
+	.title {
+		font-size: var(--sec-title-font-size);
+		color: var(--sec-title-color);
+		font-family: var(--sec-title-font-family);
+		font-weight: var(--sec-title-font-weight);
+		margin-bottom: 0;
+
+		@include media-breakpoint-down(xxl) {
+			font-size: 36px;
+			br {
+				display: none;
+			}
+		}
+
+		@include media-breakpoint-down(md) {
+			font-size: 28px;
+			br {
+				display: none;
+			}
+		}
+	}
+
+	.text {
+		position: relative;
+		margin-top: 20px;
+		@include media-breakpoint-down(xl) {
+			br {
+				display: none;
+			}
+		}
+	}
+	
+}

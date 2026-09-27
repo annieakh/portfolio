@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annie | Website Developer & Brand Specialist</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<style>
+  /* =========================================
+   MY SKILLS SECTION
+========================================= */
+
+.skills-section {
+  padding: 80px 0;
+  background: #111111;
+}
+
+.skills-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background: #252525;
+  border-radius: 30px;
+  padding: 56px 34px;
+}
+
+/* LEFT SIDE */
+
+.skills-content {
+  width: 50%;
+  padding: 0;
+}
+
+.skills-content .sub-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.skills-content .title {
+  color: #ffffff;
+  font-size: 46px;
+  line-height: 1.15;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+
+
+.skills-description {
+  max-width: 700px;
+}
+
+.skills-description p {
+  color: #eeeeee;
+  font-size: 18px;
+  line-height: 2.2;
+  margin: 0 0 22px;
+}
+
+
+/* RIGHT SIDE */
+
+.skills-grid {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.skill-card {
+  min-height: 210px;
+  background: #111111;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-7px);
+  background: #151515;
+}
+
+.skill-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-name {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+/* PHP */
+
+.php-icon {
+  background: #08b5cc;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+/* REACT */
+
+.react-icon {
+  color: #00d8ff;
+}
+
+.react-icon svg {
+  width: 70px;
+  height: 70px;
+}
+
+
+/* NODE */
+
+.node-icon {
+  background: #83cd00;
+  color: #ffffff;
+  clip-path: polygon(
+    50% 0%,
+    93% 25%,
+    93% 75%,
+    50% 100%,
+    7% 75%,
+    7% 25%
+  );
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+/* SHOPIFY */
+
+.shopify-icon {
+  position: relative;
+  background: #75b82c;
+  clip-path: polygon(
+    50% 0%,
+    90% 23%,
+    90% 77%,
+    50% 100%,
+    10% 77%,
+    10% 23%
+  );
+}
+
+.shopify-icon span {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+
+/* WORDPRESS */
+
+
+
+
+.web-icon span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.web-icon span:nth-child(1) {
+  background: #e44d26;
+  color: #ffffff;
+}
+
+.web-icon span:nth-child(2) {
+  background: #2965f1;
+  color: #ffffff;
+}
+
+.web-icon span:nth-child(3) {
+  background: #f7df1e;
+  color: #111111;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1199px) {
+
+  .skills-wrapper {
+    gap: 35px;
+  }
+
+  .skills-content .title {
+    font-size: 40px;
+  }
+
+  .skills-description p {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  .skills-grid {
+    gap: 18px;
+  }
+
+  .skill-card {
+    min-height: 190px;
+  }
+}
+
+
+@media (max-width: 991px) {
+
+  .skills-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 45px 30px;
+  }
+
+  .skills-content,
+  .skills-grid {
+    width: 100%;
+  }
+
+  .skills-content {
+    text-align: center;
+  }
+
+  .skills-description {
+    max-width: 100%;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (max-width: 767px) {
+
+  .skills-section {
+    padding: 50px 0;
+  }
+
+  .skills-wrapper {
+    border-radius: 20px;
+    padding: 35px 20px;
+  }
+
+  .skills-content .title {
+    font-size: 32px;
+  }
+
+  .skills-description p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .skill-card {
+    min-height: 175px;
+  }
+
+  .skill-icon {
+    margin-bottom: 25px;
+  }
+
+  .skill-name {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .skills-grid {
+    gap: 12px;
+  }
+
+  .skill-card {
+    min-height: 155px;
+    padding: 15px 8px;
+  }
+
+  .skill-icon {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 22px;
+  }
+
+  .skill-name {
+    font-size: 14px;
+  }
+}
+</style>
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+<div class="page-wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader"></div>
+
+  <!--Custom Cursor Wrapper -->
+
+  <!--Custom Cursor Wrapper -->
+  <div class="back-to-top-wrapper">
+    <button id="back_to_top" type="button" class="back-to-top-btn">
+      <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+  </div>
+  <!-- Back-to-top start -->
+
+   <!-- Main Header-->
+    <header class="main-header main-header-style header-style-one">
+      <!-- Header Lower -->
+      <div class="header-lower">
+        <!-- Main box -->
+        <div class="main-box">
+          <!--Nav Box-->
+          <div class="nav-outer">
+            <div class="header-left">
+              <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="" title="royalrix"></a>
+              </div>
+              <nav class="nav main-menu">
+                <ul class="navigation">
+                  <li class="current dropdown">
+                    <a href="index.html">Home</a>
+                  
+                  </li>
+                  <li><a href="page-about.html">about</a></li>
+                   <li><a href="page-services.html"> Services</a></li>
+                          <li><a href="page-projects.html"> Projects</a></li>
+                  <li><a href="page-contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="outer-box">
+              <!-- Main Menu End-->
+              <!-- <div class="social-link">
+                <a target="_blank" href="#0">FB </a>/
+                <a target="_blank" href="#0">LN</a>/
+                <a target="_blank" href="#0">iG </a>/
+                <a target="_blank" href="#0">X</a>
+              </div> -->
+              <div class="ui-btn-outer">
+                <div class="ui-btn-search">
+                  <!-- <button class="ui-btn ui-btn search-btn main-header__search search-toggler d-none d-lg-inline-block">
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                  </button> -->
+                  <a href="page-contact.html" class="btn-style-one">
+                    <span class="btn-title">Contact</span>
+                    <span class="dot-box"><span class="dot-item"></span></span>
+                  </a>
+                </div>
+                <!-- Mobile Nav toggler -->
+              </div>
+              <div class="mobile-nav-toggler">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.8125 0H1.3125C0.964403 0 0.630564 0.138281 0.384422 0.384422C0.138281 0.630564 0 0.964403 0 1.3125V5.8125C0 5.98486 0.0339487 6.15553 0.099908 6.31477C0.165867 6.47401 0.262546 6.6187 0.384422 6.74058C0.506299 6.86245 0.650988 6.95913 0.810228 7.02509C0.969468 7.09105 1.14014 7.125 1.3125 7.125H5.8125C5.98486 7.125 6.15553 7.09105 6.31477 7.02509C6.47401 6.95913 6.6187 6.86245 6.74058 6.74058C6.86245 6.6187 6.95913 6.47401 7.02509 6.31477C7.09105 6.15553 7.125 5.98486 7.125 5.8125V1.3125C7.125 1.14014 7.09105 0.969468 7.02509 0.810228C6.95913 0.650988 6.86245 0.506299 6.74058 0.384422C6.6187 0.262546 6.47401 0.165867 6.31477 0.099908C6.15553 0.0339487 5.98486 0 5.8125 0ZM6 5.8125C6 5.86223 5.98025 5.90992 5.94508 5.94508C5.90992 5.98025 5.86223 6 5.8125 6H1.3125C1.26277 6 1.21508 5.98025 1.17992 5.94508C1.14475 5.90992 1.125 5.86223 1.125 5.8125V1.3125C1.125 1.26277 1.14475 1.21508 1.17992 1.17992C1.21508 1.14475 1.26277 1.125 1.3125 1.125H5.8125C5.86223 1.125 5.90992 1.14475 5.94508 1.17992C5.98025 1.21508 6 1.26277 6 1.3125V5.8125ZM14.8125 0H10.3125C9.9644 0 9.63056 0.138281 9.38442 0.384422C9.13828 0.630564 9 0.964403 9 1.3125V5.8125C9 5.98486 9.03395 6.15553 9.09991 6.31477C9.16587 6.47401 9.26255 6.6187 9.38442 6.74058C9.5063 6.86245 9.65099 6.95913 9.81023 7.02509C9.96947 7.09105 10.1401 7.125 10.3125 7.125H14.8125C14.9849 7.125 15.1555 7.09105 15.3148 7.02509C15.474 6.95913 15.6187 6.86245 15.7406 6.74058C15.8625 6.6187 15.9591 6.47401 16.0251 6.31477C16.0911 6.15553 16.125 5.98486 16.125 5.8125V1.3125C16.125 0.964403 15.9867 0.630564 15.7406 0.384422C15.4944 0.138281 15.1606 0 14.8125 0ZM15 5.8125C15 5.86223 14.9802 5.90992 14.9451 5.94508C14.9099 5.98025 14.8622 6 14.8125 6H10.3125C10.2628 6 10.2151 5.98025 10.1799 5.94508C10.1448 5.90992 10.125 5.86223 10.125 5.8125V1.3125C10.125 1.26277 10.1448 1.21508 10.1799 1.17992C10.2151 1.14475 10.2628 1.125 10.3125 1.125H14.8125C14.8622 1.125 14.9099 1.14475 14.9451 1.17992C14.9802 1.21508 15 1.26277 15 1.3125V5.8125ZM5.8125 9H1.3125C0.964403 9 0.630564 9.13828 0.384422 9.38442C0.138281 9.63056 0 9.9644 0 10.3125V14.8125C0 15.1606 0.138281 15.4944 0.384422 15.7406C0.630564 15.9867 0.964403 16.125 1.3125 16.125H5.8125C5.98486 16.125 6.15553 16.0911 6.31477 16.0251C6.47401 15.9591 6.6187 15.8625 6.74058 15.7406C6.86245 15.6187 6.95913 15.474 7.02509 15.3148C7.09105 15.1555 7.125 14.9849 7.125 14.8125V10.3125C7.125 10.1401 7.09105 9.96947 7.02509 9.81023C6.95913 9.65099 6.86245 9.5063 6.74058 9.38442C6.6187 9.26255 6.47401 9.16587 6.31477 9.09991C6.15553 9.03395 5.98486 9 5.8125 9ZM6 14.8125C6 14.8622 5.98025 14.9099 5.94508 14.9451C5.90992 14.9802 5.86223 15 5.8125 15H1.3125C1.26277 15 1.21508 14.9802 1.17992 14.9451C1.14475 14.9099 1.125 14.8622 1.125 14.8125V10.3125C1.125 10.2628 1.14475 10.2151 1.17992 10.1799C1.21508 10.1448 1.26277 10.125 1.3125 10.125H5.8125C5.86223 10.125 5.90992 10.1448 5.94508 10.1799C5.98025 10.2151 6 10.2628 6 10.3125V14.8125ZM14.8125 9H10.3125C9.9644 9 9.63056 9.13828 9.38442 9.38442C9.13828 9.63056 9 9.9644 9 10.3125V14.8125C9 15.1606 9.13828 15.4944 9.38442 15.7406C9.63056 15.9867 9.9644 16.125 10.3125 16.125H14.8125C15.1606 16.125 15.4944 15.9867 15.7406 15.7406C15.9867 15.4944 16.125 15.1606 16.125 14.8125V10.3125C16.125 9.9644 15.9867 9.63056 15.7406 9.38442C15.4944 9.13828 15.1606 9 14.8125 9ZM15 14.8125C15 14.8622 14.9802 14.9099 14.9451 14.9451C14.9099 14.9802 14.8622 15 14.8125 15H10.3125C10.2628 15 10.2151 14.9802 10.1799 14.9451C10.1448 14.9099 10.125 14.8622 10.125 14.8125V10.3125C10.125 10.2628 10.1448 10.2151 10.1799 10.1799C10.2151 10.1448 10.2628 10.125 10.3125 10.125H14.8125C14.8622 10.125 14.9099 10.1448 14.9451 10.1799C14.9802 10.2151 15 10.2628 15 10.3125V14.8125Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Header Lower -->
+
+      <!-- Mobile Menu  -->
+      <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+        <nav class="menu-box">
+          <div class="upper-box">
+            <div class="nav-logo">
+              <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            </div>
+            <div class="close-btn"><i class="icon fa fa-times"></i></div>
+          </div>
+
+          <ul class="navigation clearfix">
+            <!--Keep This Empty / Menu will come through Javascript-->
+          </ul>
+       <ul class="contact-list-one">
+  <li>
+    <div class="contact-info-box">
+      <i class="icon lnr-icon-phone-handset"></i>
+      <span class="title">Call Now</span>
+      <a href="tel:+12247070598">(224) 707-0598</a>
+    </div>
+  </li>
+
+  <li>
+    <div class="contact-info-box">
+      <span class="icon lnr-icon-envelope1"></span>
+      <span class="title">Send Email</span>
+      <a href="mailto:websolutionsbyannie@gmail.com
+">websolutionsbyannie@gmail.com
+</a>
+    </div>
+  </li>
+
+  <li>
+    <div class="contact-info-box">
+      <span class="icon lnr-icon-map-marker"></span>
+      <span class="title">Address</span>
+      <span>Chicago, IL, USA</span>
+    </div>
+  </li>
+</ul>
+          <!-- <ul class="social-links">
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul> -->
+        </nav>
+      </div>
+      <!-- End Mobile Menu -->
+
+      <!-- Header Search -->
+      <div class="search-popup">
+        <span class="search-back-drop"></span>
+        <button class="close-search"><span class="fa fa-times"></span></button>
+
+        <div class="search-inner">
+          <form method="post" action="index.html">
+            <div class="form-group">
+              <input type="search" name="search-field" value="" placeholder="Search..." required="">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- End Header Search -->
+
+      <!-- Sticky Header  -->
+      <div class="sticky-header">
+        <div class="large-container">
+          <div class="inner-container">
+            <!--Logo-->
+            <div class="logo">
+              <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            </div>
+
+            <!--Right Col-->
+            <div class="nav-outer">
+              <!-- Main Menu -->
+              <nav class="main-menu">
+                <div class="navbar-collapse show collapse clearfix">
+                  <ul class="navigation clearfix">
+                    <!--Keep This Empty / Menu will come through Javascript-->
+                  </ul>
+                </div>
+              </nav>
+              <!-- Main Menu End-->
+            </div>
+            <div class="mobile-nav-toggler">
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.8125 0H1.3125C0.964403 0 0.630564 0.138281 0.384422 0.384422C0.138281 0.630564 0 0.964403 0 1.3125V5.8125C0 5.98486 0.0339487 6.15553 0.099908 6.31477C0.165867 6.47401 0.262546 6.6187 0.384422 6.74058C0.506299 6.86245 0.650988 6.95913 0.810228 7.02509C0.969468 7.09105 1.14014 7.125 1.3125 7.125H5.8125C5.98486 7.125 6.15553 7.09105 6.31477 7.02509C6.47401 6.95913 6.6187 6.86245 6.74058 6.74058C6.86245 6.6187 6.95913 6.47401 7.02509 6.31477C7.09105 6.15553 7.125 5.98486 7.125 5.8125V1.3125C7.125 1.14014 7.09105 0.969468 7.02509 0.810228C6.95913 0.650988 6.86245 0.506299 6.74058 0.384422C6.6187 0.262546 6.47401 0.165867 6.31477 0.099908C6.15553 0.0339487 5.98486 0 5.8125 0ZM6 5.8125C6 5.86223 5.98025 5.90992 5.94508 5.94508C5.90992 5.98025 5.86223 6 5.8125 6H1.3125C1.26277 6 1.21508 5.98025 1.17992 5.94508C1.14475 5.90992 1.125 5.86223 1.125 5.8125V1.3125C1.125 1.26277 1.14475 1.21508 1.17992 1.17992C1.21508 1.14475 1.26277 1.125 1.3125 1.125H5.8125C5.86223 1.125 5.90992 1.14475 5.94508 1.17992C5.98025 1.21508 6 1.26277 6 1.3125V5.8125ZM14.8125 0H10.3125C9.9644 0 9.63056 0.138281 9.38442 0.384422C9.13828 0.630564 9 0.964403 9 1.3125V5.8125C9 5.98486 9.03395 6.15553 9.09991 6.31477C9.16587 6.47401 9.26255 6.6187 9.38442 6.74058C9.5063 6.86245 9.65099 6.95913 9.81023 7.02509C9.96947 7.09105 10.1401 7.125 10.3125 7.125H14.8125C14.9849 7.125 15.1555 7.09105 15.3148 7.02509C15.474 6.95913 15.6187 6.86245 15.7406 6.74058C15.8625 6.6187 15.9591 6.47401 16.0251 6.31477C16.0911 6.15553 16.125 5.98486 16.125 5.8125V1.3125C16.125 0.964403 15.9867 0.630564 15.7406 0.384422C15.4944 0.138281 15.1606 0 14.8125 0ZM15 5.8125C15 5.86223 14.9802 5.90992 14.9451 5.94508C14.9099 5.98025 14.8622 6 14.8125 6H10.3125C10.2628 6 10.2151 5.98025 10.1799 5.94508C10.1448 5.90992 10.125 5.86223 10.125 5.8125V1.3125C10.125 1.26277 10.1448 1.21508 10.1799 1.17992C10.2151 1.14475 10.2628 1.125 10.3125 1.125H14.8125C14.8622 1.125 14.9099 1.14475 14.9451 1.17992C14.9802 1.21508 15 1.26277 15 1.3125V5.8125ZM5.8125 9H1.3125C0.964403 9 0.630564 9.13828 0.384422 9.38442C0.138281 9.63056 0 9.9644 0 10.3125V14.8125C0 15.1606 0.138281 15.4944 0.384422 15.7406C0.630564 15.9867 0.964403 16.125 1.3125 16.125H5.8125C5.98486 16.125 6.15553 16.0911 6.31477 16.0251C6.47401 15.9591 6.6187 15.8625 6.74058 15.7406C6.86245 15.6187 6.95913 15.474 7.02509 15.3148C7.09105 15.1555 7.125 14.9849 7.125 14.8125V10.3125C7.125 10.1401 7.09105 9.96947 7.02509 9.81023C6.95913 9.65099 6.86245 9.5063 6.74058 9.38442C6.6187 9.26255 6.47401 9.16587 6.31477 9.09991C6.15553 9.03395 5.98486 9 5.8125 9ZM6 14.8125C6 14.8622 5.98025 14.9099 5.94508 14.9451C5.90992 14.9802 5.86223 15 5.8125 15H1.3125C1.26277 15 1.21508 14.9802 1.17992 14.9451C1.14475 14.9099 1.125 14.8622 1.125 14.8125V10.3125C1.125 10.2628 1.14475 10.2151 1.17992 10.1799C1.21508 10.1448 1.26277 10.125 1.3125 10.125H5.8125C5.86223 10.125 5.90992 10.1448 5.94508 10.1799C5.98025 10.2151 6 10.2628 6 10.3125V14.8125ZM14.8125 9H10.3125C9.9644 9 9.63056 9.13828 9.38442 9.38442C9.13828 9.63056 9 9.9644 9 10.3125V14.8125C9 15.1606 9.13828 15.4944 9.38442 15.7406C9.63056 15.9867 9.9644 16.125 10.3125 16.125H14.8125C15.1606 16.125 15.4944 15.9867 15.7406 15.7406C15.9867 15.4944 16.125 15.1606 16.125 14.8125V10.3125C16.125 9.9644 15.9867 9.63056 15.7406 9.38442C15.4944 9.13828 15.1606 9 14.8125 9ZM15 14.8125C15 14.8622 14.9802 14.9099 14.9451 14.9451C14.9099 14.9802 14.8622 15 14.8125 15H10.3125C10.2628 15 10.2151 14.9802 10.1799 14.9451C10.1448 14.9099 10.125 14.8622 10.125 14.8125V10.3125C10.125 10.2628 10.1448 10.2151 10.1799 10.1799C10.2151 10.1448 10.2628 10.125 10.3125 10.125H14.8125C14.8622 10.125 14.9099 10.1448 14.9451 10.1799C14.9802 10.2151 15 10.2628 15 10.3125V14.8125Z"
+                  fill="white" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Sticky Menu -->
+    </header>
+    <!--End Main Header -->
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+
+      <!-- Start main-content -->
+    	<section class="page-title" style="background-image: url(images/bg/banner.webp);">
+    		<div class="auto-container">
+    			<div class="title-outer text-center">
+    				<div class="h1 title">About</div>
+    				<ul class="page-breadcrumb">
+    					<li><a href="index.html">Home</a></li>
+    					<li>About</li>
+    				</ul>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end main-content -->
+
+      <!-- About Section -->
+      <section class="about-section pt-120 pb-0">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-xl-6 col-lg-10 image-column">
+              <div class="inner-column">
+                <div class="row g-4 align-items-end">
+                  <div class="col-sm-6">
+                    <figure class="image wow imageUpToDown"><img data-speed="0.8" src="images/about/about-2.webp" alt="Image"></figure>
+                  </div>
+                  <div class="col-sm-6">
+                    <figure class="image wow imageUpToDown"><img data-speed="0.8" src="images/about/about-1.webp" alt="Image"></figure>
+                    <div class="about-block mt-4 wow fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
+                      <div class="inner-block">
+                        <!-- <div class="author"><img src="images/about/about-author.jpg" alt="Image"></div> -->
+                        <div class="content-box">
+                          <div class="h4 title">Annie</div>
+                          <div class="text">Expert Web Developer</div>
+                          <!-- <div class="sign"><img src="images/about/about-sign.png" alt="Image"></div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-10 content-column">
+              <div class="inner-column">
+                <div class="sec-title mb-40">
+                  <div class="sub-title"><img src="images/icon/sec-title-icon.png" alt="Icon"> About Me</div>
+                  <div class="h2 title text-reveal-anim">
+  Hey, I’m <span class="text-theme-colored1">Annie!</span> <br>
+  A Web Developer & Designer
+</div>
+                 <div class="text mt-30">
+ A Web Developer and Brand Specialist dedicated to creating impactful digital experiences for businesses and individuals. I combine modern design principles with reliable development practices to build websites that look polished, work seamlessly, and perform effectively across different devices.
+</div>
+
+<div class="text mt-30">
+ Every project starts with understanding what makes your business unique. I take the time to learn about your objectives, target audience, and requirements so I can develop a website that reflects your brand and supports your goals. Rather than focusing only on appearance, I build with usability, functionality, and long-term performance in mind.
+</div>
+
+<div class="text mt-30">
+ My core expertise lies in MERN Stack development, along with extensive experience working with WordPress and Shopify. I work with technologies including JavaScript, React.js, Node.js, Express.js, PHP, HTML, and CSS, giving me the flexibility to handle both front-end interfaces and back-end functionality. From business websites and online stores to custom web applications, I create solutions tailored to each project's specific requirements.
+</div>
+
+<div class="text mt-30">
+  I also pay close attention to the factors that keep a website successful after launch. This includes SEO, security, speed optimization, responsive layouts, technical improvements, and ongoing maintenance. My aim is to deliver digital products that are not only attractive but also fast, dependable, easy to use, and ready to grow with your business.
+</div>
+                </div>
+                <!-- <div class="row g-4 align-items-end">
+                  <div class="col-sm-7">
+                    <div class="about-block-three first-block">
+                      <div class="inner-block">
+                        <div class="icon">
+                          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35.4707 4.1377H12.5267L1.05469 24.0001L12.5267 43.8625H35.4707L46.9427 24.0001L35.4707 4.1377Z" stroke="white" stroke-width="0.8" stroke-miterlimit="10" />
+                            <path d="M14.0711 5.17426C14.1767 5.06866 24.5159 5.00146 24.6791 5.00146C24.8423 5.00146 35.1815 5.06866 35.2391 5.17426C35.2967 5.27986 45.6071 23.0879 45.6071 23.2511C45.6071 23.4143 35.3927 41.2223 35.2871 41.3279C35.1815 41.4335 24.8423 41.4911 24.7271 41.4911C24.6119 41.4911 14.2247 41.4335 14.1671 41.3279C14.1095 41.2223 3.70312 23.4143 3.70312 23.2511C3.70312 23.0879 13.9655 5.27986 14.0711 5.17426Z" stroke="white" stroke-width="0.8" stroke-miterlimit="10" />
+                            <path d="M15.6078 6.2206C15.8286 6.0094 25.035 5.875 25.3614 5.875C25.6878 5.875 34.9038 6.0094 35.115 6.2206C35.3262 6.4318 44.379 22.1758 44.379 22.5406C44.379 22.9054 35.3262 38.611 35.115 38.8606C34.9038 39.1102 25.6878 39.2062 25.3614 39.2062C25.035 39.2062 15.8286 39.0718 15.6078 38.8606C15.387 38.6494 6.34375 22.9054 6.34375 22.5406C6.34375 22.1758 15.3582 6.4318 15.6078 6.2206Z" stroke="white" stroke-width="0.8" stroke-miterlimit="10" />
+                            <path d="M17.1522 7.26742C17.469 6.94102 25.5618 6.72021 26.0418 6.72021C26.5218 6.72021 34.6146 6.91222 34.9314 7.23862C35.2482 7.56502 43.101 21.2642 43.101 21.7538C43.101 22.2434 35.2482 35.9234 34.9314 36.2402C34.6146 36.557 26.5314 36.7586 26.0418 36.7586C25.5522 36.7586 17.469 36.557 17.1522 36.2402C16.8354 35.9234 8.99219 22.2338 8.99219 21.7538C8.99219 21.2738 16.8354 7.58422 17.1522 7.26742Z" stroke="white" stroke-width="0.8" stroke-miterlimit="10" />
+                            <path d="M18.6984 8.30416C19.1208 7.88176 26.0808 7.62256 26.724 7.62256C27.3672 7.62256 34.3368 7.88176 34.7592 8.30416C35.1816 8.72656 41.8152 20.3522 41.8152 21.005C41.8152 21.6578 35.1816 33.2738 34.7592 33.6962C34.3368 34.1186 27.3768 34.3874 26.724 34.3874C26.0712 34.3874 19.1208 34.1186 18.6984 33.6962C18.276 33.2738 11.6328 21.6482 11.6328 21.005C11.6328 20.3618 18.2376 8.72656 18.6984 8.30416Z" stroke="white" stroke-width="0.8" stroke-miterlimit="10" />
+                            <path d="M20.2368 9.35082C20.7744 8.81322 26.6016 8.48682 27.408 8.48682C28.2144 8.48682 34.0512 8.81322 34.5792 9.35082C35.1072 9.88842 40.5408 19.4404 40.5408 20.2564C40.5408 21.0724 35.1168 30.6244 34.56 31.1524C34.0032 31.6804 28.2048 32.0164 27.3888 32.0164C26.5728 32.0164 20.7552 31.69 20.2176 31.1524C19.68 30.6148 14.2656 21.0628 14.2656 20.2564C14.2656 19.45 19.7088 9.87882 20.2368 9.35082Z" stroke="white" stroke-width="0.8" stroke-miterlimit="10" />
+                            <path d="M21.7795 10.3876C22.4131 9.75395 27.1171 9.36035 28.0867 9.36035C29.0563 9.36035 33.7699 9.75395 34.4035 10.3876C35.0371 11.0212 39.2611 18.5284 39.2611 19.498C39.2611 20.4676 35.0371 27.9748 34.4035 28.618C33.7699 29.2612 29.0659 29.6452 28.0867 29.6452C27.1075 29.6452 22.4131 29.2516 21.7795 28.618C21.1459 27.9844 16.9219 20.4772 16.9219 19.498C16.9219 18.5188 21.1171 11.0308 21.7795 10.3876Z" stroke="white" stroke-width="0.8" stroke-miterlimit="10" />
+                            <path d="M23.3168 11.4334C24.0656 10.6942 27.6368 10.2334 28.7696 10.2334C29.9024 10.2334 33.4832 10.6942 34.2224 11.4334C34.9616 12.1726 37.976 17.6158 37.976 18.7486C37.976 19.8814 34.9712 25.3246 34.2224 26.0734C33.4736 26.8222 29.912 27.2734 28.7984 27.2734C27.6848 27.2734 24.0944 26.8126 23.3456 26.0734C22.5968 25.3342 19.6016 19.891 19.6016 18.7486C19.6016 17.6062 22.5776 12.1726 23.3168 11.4334Z" stroke="white" stroke-width="0.8" stroke-miterlimit="10" />
+                            <path d="M24.8611 12.4801C25.7053 11.6257 28.1533 11.0977 29.4493 11.0977C30.7453 11.0977 33.1933 11.6257 34.0477 12.4801C34.9021 13.3345 36.6973 16.7041 36.6973 18.0001C36.6973 19.2961 34.8925 22.6753 34.0477 23.5297C33.2029 24.3841 30.7165 24.9025 29.4493 24.9025C28.1821 24.9025 25.7053 24.3745 24.8605 23.5297C24.0157 22.6849 22.2109 19.2961 22.2109 18.0001C22.2109 16.7041 23.9971 13.3249 24.8611 12.4801Z" stroke="white" stroke-width="0.8" stroke-miterlimit="10" />
+                            <path d="M35.4229 17.2802C35.4257 18.5041 35.0039 19.6911 34.2295 20.6389C33.4551 21.5867 32.376 22.2366 31.1761 22.4779C29.9761 22.7191 28.7297 22.5368 27.6491 21.962C26.5686 21.3872 25.7208 20.4555 25.2503 19.3256C24.7797 18.1958 24.7156 16.9377 25.0687 15.7658C25.4219 14.5939 26.1705 13.5808 27.1869 12.899C28.2034 12.2173 29.4248 11.9091 30.6431 12.0271C31.8613 12.145 33.0009 12.6817 33.8677 13.5458C34.3614 14.0342 34.7532 14.6158 35.0202 15.2569C35.2871 15.898 35.4241 16.5858 35.4229 17.2802Z" stroke="white" stroke-width="0.8" stroke-miterlimit="10" />
+                          </svg>
+                        </div>
+                        <div class="content">
+                          <div class="h5 title">Design Solutions</div>
+                          <div class="text">Crafting unique and creative visual experiences.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="about-block-three">
+                      <div class="inner-block">
+                        <div class="icon">
+                          <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.3375 39.8747C16.3292 39.8747 11.5258 37.8869 7.98209 34.3479C4.43837 30.8089 2.44418 26.0081 2.4375 20.9999V2.07471H40.2375V20.9999C40.2308 26.0081 38.2366 30.8089 34.6929 34.3479C31.1492 37.8869 26.3457 39.8747 21.3375 39.8747Z" stroke="white" stroke-width="1.6" stroke-miterlimit="10" />
+                            <path d="M21.335 37.0693C16.8949 37.0693 12.6367 35.3056 9.49711 32.166C6.35755 29.0264 4.59375 24.7682 4.59375 20.3281V3.58691H38.0678V20.3281C38.0678 24.7667 36.3051 29.0236 33.1673 32.1629C30.0296 35.3023 25.7735 37.0671 21.335 37.0693Z" stroke="white" stroke-width="1.6" stroke-miterlimit="10" />
+                            <path d="M21.3348 34.2551C19.4169 34.2594 17.5171 33.8855 15.744 33.1547C13.9709 32.4238 12.3594 31.3504 11.0017 29.9958C9.64405 28.6413 8.56692 27.0322 7.83198 25.2608C7.09704 23.4894 6.71874 21.5905 6.71875 19.6727V5.09863H35.9088V19.6727C35.9098 21.5872 35.5337 23.4832 34.8018 25.2524C34.0699 27.0216 32.9966 28.6292 31.6431 29.9834C30.2897 31.3377 28.6827 32.4119 26.9139 33.1448C25.1452 33.8778 23.2494 34.2551 21.3348 34.2551Z" stroke="white" stroke-width="1.6" stroke-miterlimit="10" />
+                            <path d="M21.3338 31.4413C18.0403 31.4413 14.8815 30.1336 12.5519 27.8056C10.2222 25.4775 8.91234 22.3196 8.91016 19.0261V6.60254H33.749V19.0261C33.749 22.3188 32.4409 25.4767 30.1126 27.805C27.7843 30.1333 24.6265 31.4413 21.3338 31.4413Z" stroke="white" stroke-width="1.6" stroke-miterlimit="10" />
+                            <path d="M21.3351 28.6355C18.6127 28.6355 16.0018 27.554 14.0768 25.629C12.1518 23.704 11.0703 21.0931 11.0703 18.3707V8.11426H31.5915V18.3707C31.5915 21.0916 30.5112 23.7012 28.588 25.626C26.6647 27.5508 24.056 28.6333 21.3351 28.6355Z" stroke="white" stroke-width="1.6" stroke-miterlimit="10" />
+                            <path d="M21.3365 25.8217C19.1881 25.8217 17.1276 24.9687 15.6077 23.4504C14.0877 21.932 13.2327 19.8725 13.2305 17.7241V9.62646H29.4005V17.7241C29.3983 19.8651 28.549 21.9184 27.0382 23.4356C25.5273 24.9528 23.4775 25.8106 21.3365 25.8217Z" stroke="white" stroke-width="1.6" stroke-miterlimit="10" />
+                            <path d="M21.3339 23.0164C19.7567 23.0164 18.2439 22.3898 17.1286 21.2745C16.0133 20.1592 15.3867 18.6464 15.3867 17.0692V11.1304H27.2727V17.0692C27.2727 18.645 26.6473 20.1564 25.5338 21.2715C24.4203 22.3866 22.9098 23.0141 21.3339 23.0164Z" stroke="white" stroke-width="1.6" stroke-miterlimit="10" />
+                            <path d="M21.3386 20.2026C20.3361 20.2026 19.3747 19.8043 18.6657 19.0955C17.9568 18.3866 17.5586 17.4251 17.5586 16.4226V12.6426H25.1186V16.4226C25.1164 17.4244 24.7174 18.3846 24.009 19.093C23.3006 19.8015 22.3405 20.2004 21.3386 20.2026Z" stroke="white" stroke-width="1.6" stroke-miterlimit="10" />
+                          </svg>
+                        </div>
+                        <div class="content">
+                          <div class="h5 title">Collaborative Proces</div>
+                          <div class="text">Crafting unique and creative visual experiences.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="page-about.html" class="btn-style-one mt-40">
+                      <span class="btn-title">More About</span>
+                      <span class="dot-box"><span class="dot-item"></span></span>
+                    </a>
+                  </div>
+                  <div class="col-sm-5">
+                    <div class="about-block-count">
+                      <div class="inner-block">
+                        <figure class="image"><img src="images/about/about-author2.jpg" alt="Image"></figure>
+                        <div class="content-box">
+                          <div class="h2 title"><span class="counter">27</span>+</div>
+                          <div class="text">Years of Experience</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow1"><img src="images/shape/about-shadow-left.png" alt="Image"></div>
+        <div class="shadow2"><img src="images/shape/about-shadow-right.png" alt="Image"></div>
+        <div class="shadow3"><img src="images/shape/service-shadow-left.png" alt="Image"></div>
+        <div class="shadow4"><img src="images/shape/service-shadow-right.png" alt="Image"></div>
+        <div class="shape-left"><img src="images/shape/about-shape-left.png" alt="Image"></div>
+        <div class="shape-right"><img src="images/shape/about-shape-right.png" alt="Image"></div>
+        <div class="object-left"><img class="tm-gsap-animate-circle" src="images/shape/about-object.png" alt="Image"></div>
+        <div class="object-right"><img class="animation__rotate" src="images/shape/about-object-right.png" alt="Image"></div>
+      </section>
+    	<!-- End About Section -->
+
+      <!-- Process section -->
+  <section class="skills-section">
+  <div class="container">
+    <div class="skills-wrapper">
+
+      <!-- Left Content -->
+      <div class="skills-content">
+        <div class="sub-title">What I Do</div>
+
+        <div class="h2 title">
+        Building Digital Experiences
+          <span class="text-theme-colored1">That Deliver</span>
+        </div>
+
+        <div class="skills-description">
+          <p>
+           I create modern websites and web applications that are fast, responsive, visually engaging, and built to perform. My expertise spans WordPress, Shopify, React.js, Node.js, and MERN Stack, allowing me to develop tailored solutions for a wide range of business and project needs.
+          </p>
+
+          <p>
+          From custom websites and eCommerce platforms to dynamic web applications, I focus on clean development, smooth functionality, and an intuitive experience across every device.
+<br>
+Have an idea in mind? Let’s turn it into a reliable, engaging, and results-driven digital solution.
+          </p>
+        </div>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="skills-grid">
+        <!-- Shopify -->
+        <div class="skill-card">
+          <div class="skill-icon shopify-icon">
+            <span>S</span>
+          </div>
+          <div class="skill-name">Shopify</div>
+        </div>
+
+        <!-- WordPress -->
+        <div class="skill-card">
+          <div class="skill-icon wordpress-icon">
+           <img src="images/about/wordpress.png" alt="">
+          </div>
+          <div class="skill-name">WordPress</div>
+        </div>
+
+        <!-- HTML CSS JS -->
+        <div class="skill-card">
+          <div class="skill-icon web-icon">
+           <img src="images/about/all.png" alt="">
+          </div>
+          <div class="skill-name">HTML/CSS/JS</div>
+        </div>
+        <!-- PHP -->
+        <div class="skill-card">
+          <div class="skill-icon php-icon">PHP</div>
+          <div class="skill-name">PHP</div>
+        </div>
+
+        <!-- React -->
+        <div class="skill-card">
+          <div class="skill-icon react-icon">
+            <svg viewBox="0 0 100 100" aria-hidden="true">
+              <circle cx="50" cy="50" r="8" fill="currentColor"/>
+              <ellipse cx="50" cy="50" rx="42" ry="16"
+                       fill="none" stroke="currentColor" stroke-width="4"/>
+              <ellipse cx="50" cy="50" rx="42" ry="16"
+                       fill="none" stroke="currentColor" stroke-width="4"
+                       transform="rotate(60 50 50)"/>
+              <ellipse cx="50" cy="50" rx="42" ry="16"
+                       fill="none" stroke="currentColor" stroke-width="4"
+                       transform="rotate(120 50 50)"/>
+            </svg>
+          </div>
+          <div class="skill-name">React Js</div>
+        </div>
+
+        <!-- Node -->
+        <div class="skill-card">
+          <div class="skill-icon node-icon">node</div>
+          <div class="skill-name">Node Js</div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+  </div>
+</section>
+      <!-- Process section -->
+
+    
+  
+
+      <!-- Contact section -->
+        <section class="contact-section margin-minus">
+          <div class="container">
+            <div class="inner-container">
+              <div class="row g-2">
+                <div class="col-md-6 col-xl-4 wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+                  <div class="contact-block">
+                    <div class="inner-block">
+                      <div class="icon"><i class="fa-solid fa-phone-volume"></i></div>
+                      <div class="text">Phone Number</div>
+                      <div class="h4 title">(224) 707-0598</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4 wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
+                  <div class="contact-block">
+                    <div class="inner-block">
+                      <div class="icon"><i class="fa-solid fa-paper-plane"></i></div>
+                      <div class="text">Your Gmail</div>
+                      <div class="h4 title">websolutionsbyannie@gmail.com
+</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4 wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+                  <div class="contact-block">
+                    <div class="inner-block">
+                      <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                      <div class="text"> Address</div>
+                      <div class="h4 title">Chicago, IL, USA</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Contact section -->
+
+        <!-- Main Footer -->
+      <!-- Simple Centered Footer -->
+<footer class="main-footer simple-footer">
+  <div class="container">
+    <div class="simple-footer-content">
+
+      <!-- Logo -->
+      <div class="simple-footer-logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Annie Logo">
+        </a>
+      </div>
+
+      <!-- About Me -->
+      <p class="simple-footer-about">
+        I create modern, responsive, and high-performance websites
+        that help businesses grow with creative digital solutions.
+      </p>
+
+      <!-- Contact Button -->
+      <div class="simple-footer-button">
+        <a href="page-contact.html" class="btn-style-one">
+          <span class="btn-title">Contact</span>
+          <span class="dot-box">
+            <span class="dot-item"></span>
+          </span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="simple-footer-bottom">
+    <div class="container">
+      <p>
+        © 2026 Annie. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+        <!--End Main Footer -->
+    </div>
+  </div>
+
+</div><!-- End Page Wrapper -->
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/knob.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<script src="js/splitType.js"></script>
+<script src="js/ScrollSmoother.min.js"></script>
+<script src="js/gsap-scroll-to-plugin.js"></script>
+<script src="js/SplitText.min.js"></script>
+<script src="js/custom-gsap.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

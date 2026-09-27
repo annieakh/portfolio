@@ -1,0 +1,305 @@
+/*** 
+
+====================================================================
+    FAQ's Section
+====================================================================
+
+***/
+
+.faqs-section {
+	position: relative;
+	z-index: 1;
+	.shadow264-1 {
+		left: 0;
+		position: absolute;
+		top: 25%;
+		z-index: -1;
+	}
+	.shadow264-2 {
+		position: absolute;
+		right: 0;
+		top: -15%;
+		z-index: -1;
+	}
+	.shadow1 {
+		position: absolute;
+		right: 0;
+		top: 45%;
+		z-index: -1;
+	}
+	.object1 {
+		position: absolute;
+		left: 30px;
+		top: 45%;
+		z-index: -1;
+	}
+}
+
+.faqs-tabs {
+	.nav {
+		&.nav-tabs {
+			border-bottom: none;
+			gap: 10px;
+			.nav-item {
+				.nav-link {
+					font-weight: 600;
+					color: var(--theme-color-white);
+					font-size: 16px;
+					border-radius: 40px;
+					background-color: rgba(255, 255, 255, 0.102);
+					padding: 15px 30px;
+					border: none;
+					box-shadow: none;
+					&.active {
+						background-color: var(--theme-color1);
+						color: var(--theme-color-dark);
+					}
+				}
+			}
+		}
+	}
+}
+
+.faqs-accordion {
+	.accordion-box {
+		position: relative;
+		max-width: 100%;
+		padding: 0;
+		.block {
+			position: relative;
+			background: #111111;
+			margin-bottom: 10px;
+			border: 1px solid rgba(255, 255, 255, 0.102);
+			box-shadow: none;
+			border-radius: 20px;
+			backdrop-filter: blur(66.19999694824219px);
+			padding: 0;
+			.acc-btn {
+				position: relative;
+				font-size: 20px;
+				font-family: var(--heading-font-family);
+				line-height: 24px;
+				color: var(--headings-color);
+				font-weight: 500;
+				cursor: pointer;
+				padding: 30px 30px;
+				@include transition(all 500ms ease);
+				border: none;
+				margin-bottom: 0;
+				@include media-breakpoint-down(md) {
+					padding: 30px 20px;
+					padding-right: 60px;
+					display: flex;
+					align-items: start;
+					gap: 15px;
+				}
+				.number {
+					color: var(--theme-color1);
+					margin-right: 5px;
+				}
+				.icon {
+					background: #1c1c1c;
+					position: absolute;
+					right: 30px;
+					top: calc(50% - 17px);
+					height: 34px;
+					width: 34px;
+					font-size: 14px;
+					line-height: 34px;
+					border-radius: 50%;
+					text-align: center;
+					color: var(--headings-color);
+					@include transition(all 500ms ease);
+					&::before {
+						font-weight: 700;
+					}
+
+					@include media-breakpoint-down(md) {
+						right: 15px;
+						top: 25px;
+					}
+				}
+				&.active {
+					color: var(--theme-color-white);
+					.icon {
+						background: var(--theme-color1);
+						&:before {
+							content: "\f068";
+							color: var(--theme-color-dark);
+							font-weight: 700;
+						}
+					}
+				}
+			}
+			.acc-content {
+				position: relative;
+				display: none;
+				.content {
+					position: relative;
+					padding: 0px 30px 25px 30px;
+					margin-bottom: 0;
+					.text {
+						display: block;
+						margin-bottom: 0;
+						line-height: 26px;
+						max-width: 930px;
+						color: #cccccccc;
+						@include media-breakpoint-down(lg) {
+							br {
+								display: none;
+							}
+						}
+					}
+					@include media-breakpoint-down(md) {
+						padding: 0px 20px 25px 20px;
+					}
+				}
+				&.current {
+					display: block;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+/*** 
+
+====================================================================
+    FAQ's Section Two
+====================================================================
+
+***/
+
+.faqs-section-two {
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+	.image-column {
+		.inner-column {
+			.image {
+				margin-bottom: 0;
+				overflow: hidden;
+				border-radius: 32px;
+				@include media-breakpoint-down(lg){
+					max-height: 500px;
+				}
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.content-column {
+		.inner-column {
+			padding-left: 60px;
+			.faqs-accordion {
+				.accordion-box {
+					position: relative;
+					max-width: 100%;
+					padding: 0;
+					.block {
+						position: relative;
+						background: transparent;
+						margin-bottom: 30px;
+						border: none;
+						box-shadow: none;
+						border-radius: 0;
+						backdrop-filter: blur(0);
+						@include media-breakpoint-down(sm) {
+							margin-bottom: 10px;
+						}
+						.acc-btn {
+							position: relative;
+							font-size: 22px;
+							line-height: 24px;
+							font-weight: 500;
+							cursor: pointer;
+							padding: 10px 20px;
+							padding-left: 90px !important;
+							@include transition(all 500ms ease);
+							border: none;
+							margin-bottom: 0;
+							.icon {
+								background: transparent;
+								position: absolute;
+								left: 0;
+								top: 0;
+								height: 40px;
+								width: 60px;
+								line-height: 40px;
+								font-size: 18px;
+								border-radius: 50%;
+								text-align: center;
+								color: var(--headings-color);
+								@include transition(all 500ms ease);
+								&::before {
+									font-weight: 500;
+								}
+								@include media-breakpoint-down(sm) {
+									width: 40px;
+									top: 15px;
+								}
+							}
+							&.active {
+								color: var(--theme-color-white);
+								padding: 20px;
+								.icon {
+									background: var(--theme-color1);
+									height: 60px;
+									width: 60px;
+									line-height: 60px;
+									&:before {
+										content: "\f067";
+										color: var(--theme-color-dark);
+										font-weight: 500;
+									}
+									@include media-breakpoint-down(sm) {
+										height: 40px;
+										width: 40px;
+										line-height: 40px;
+									}
+								}
+							}
+							@include media-breakpoint-down(sm) {
+								padding-left: 60px !important;
+								font-size: 18px;
+							}
+						}
+						.acc-content {
+							position: relative;
+							display: none;
+							.content {
+								position: relative;
+								padding: 0;
+								padding-left: 90px;
+								padding-bottom: 10px;
+								margin-bottom: 0;
+								.text {
+									display: block;
+									margin-bottom: 0;
+									line-height: 26px;
+									color: #e5e5e5;
+									max-width: 730px;
+								}
+								@include media-breakpoint-down(sm) {
+									padding-left: 60px;
+									.text {
+										font-size: 14px;
+									}
+								}
+							}
+							&.current {
+								display: block;
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+			}
+			@include media-breakpoint-down(xl) {
+				padding-left: 0;
+			}
+		}
+	}
+}

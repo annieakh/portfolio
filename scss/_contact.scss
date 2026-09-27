@@ -1,0 +1,213 @@
+/***
+
+====================================================================
+    Contact Section
+====================================================================
+
+***/
+
+.contact-section {
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+
+  .inner-container {
+    padding: 12px;
+    border-radius: 32px;
+    background-color: var(--theme-color1);
+  }
+
+  &.margin-minus {
+    margin-bottom: -100px;
+  }
+}
+
+.contact-block {
+  .inner-block {
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #121310;
+    .icon {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      color: var(--theme-color-white);
+      border-radius: 50%;
+      border: 1px solid var(--theme-color-white);
+      font-size: 20px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      @include transition(all 300ms ease);
+
+      i {
+        display: inline-block;
+        @include transition(all 700ms ease);
+      }
+    }
+
+    .title {
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    &:hover {
+      .icon {
+        color: var(--theme-color1);
+        border-color: var(--theme-color1);
+
+        i {
+          transform: rotateY(360deg);
+        }
+      }
+    }
+  }
+}
+
+/***
+
+====================================================================
+    Contact Section Four
+====================================================================
+
+***/
+
+.contact-section-four {
+  overflow: hidden;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  .btn-style-one {
+    color: var(--theme-color-white);
+    background-color: var(--theme-color-dark);
+    .dot-box {
+      background-color: var(--theme-color1);
+
+      .dot-item {
+        background-color: var(--theme-color-dark);
+        &::before,
+        &::after {
+          background-color: var(--theme-color-dark);
+        }
+      }
+    }
+    &:hover {
+      color: var(--theme-color-dark);
+      .dot-box {
+        background-color: var(--theme-color-dark);
+
+        .dot-item {
+          background-color: var(--theme-color-white);
+          &::before,
+          &::after {
+            background-color: var(--theme-color-white);
+          }
+        }
+      }
+    }
+  }
+
+  .outer-container {
+    max-width: 1820px;
+    margin: 0 auto;
+    border-radius: 40px;
+    overflow: hidden;
+    background-color: var(--theme-color1);
+    padding: 65px 0;
+    position: relative;
+    z-index: 1;
+
+    .sec-shape {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+
+  .content-column {
+    .inner-column {
+      .sec-title {
+        .title {
+          color: var(--theme-color-dark);
+          font-size: 72px;
+          line-height: 1.2;
+        }
+
+        .text {
+          color: var(--theme-color-dark);
+          line-height: 1.7;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        .sec-title {
+          .title {
+            font-size: 50px;
+          }
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        .sec-title {
+          .title {
+            font-size: 36px;
+          }
+        }
+      }
+    }
+  }
+
+  .form-column {
+    .inner-column {
+      background-color: var(--theme-color-white);
+      padding: 60px 70px;
+      border-radius: 20px;
+      overflow: hidden;
+
+      .content-box {
+        margin-bottom: 30px;
+        .title {
+          color: var(--theme-color-dark);
+          margin-bottom: 0;
+        }
+
+        .text {
+          color: #333333;
+        }
+      }
+
+      form {
+        label {
+          color: var(--theme-color-dark);
+          margin-bottom: 3px;
+          font-weight: 700;
+        }
+        input,
+        textarea {
+          background-color: #f9f9f9;
+          border-radius: 0;
+          padding: 10px 15px;
+          border: 1px solid #f9f9f9;
+          @include transition(all 300ms ease);
+          &:focus {
+            background-color: #fff;
+            border-color: var(--theme-color1);
+          }
+        }
+        input {
+          height: 45px;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        padding: 40px 50px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding: 30px 20px;
+      }
+    }
+  }
+}

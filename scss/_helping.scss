@@ -1,0 +1,405 @@
+/***
+
+====================================================================
+Multiple Section
+====================================================================
+
+***/
+
+.multiple-section {
+  position: relative;
+  z-index: 1;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  .outer-container {
+    max-width: 1800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 40px;
+
+    .sec-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+
+  .shadow264-1 {
+    position: absolute;
+    top: -30%;
+    left: 0;
+    z-index: -1;
+
+    @include media-breakpoint-down(xxl) {
+      display: none;
+    }
+  }
+  .shadow-center {
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  .shadow264-2 {
+    position: absolute;
+    top: -30%;
+    right: 0;
+    z-index: -1;
+
+    @include media-breakpoint-down(xxl) {
+      display: none;
+    }
+  }
+
+  .shadow264-3 {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    z-index: -1;
+  }
+
+  .shadow264-4 {
+    position: absolute;
+    bottom: -42%;
+    right: 0;
+    z-index: -1;
+  }
+
+  .shadow1 {
+    position: absolute;
+    top: 28%;
+    left: 0;
+    z-index: -1;
+  }
+
+  .object1 {
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    z-index: 1;
+
+    @include media-breakpoint-down(xxl) {
+      display: none;
+    }
+  }
+  .object2 {
+    position: absolute;
+    top: 53%;
+    left: 70px;
+    z-index: 1;
+
+    @include media-breakpoint-down(xxl) {
+      display: none;
+    }
+  }
+
+  .object3 {
+    position: absolute;
+    top: 36%;
+    right: -48px;
+    z-index: -1;
+  }
+}
+
+/***
+
+====================================================================
+Swiper Array Button
+====================================================================
+
+***/
+
+.array-button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  .array-prev,
+  .array-next {
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+    background: var(--theme-color-dark);
+    color: var(--theme-color-white);
+    font-size: 18px;
+    height: 50px;
+    width: 50px;
+    @include transition(300ms);
+
+    &:hover {
+      color: var(--theme-color-black);
+      background: var(--theme-color1);
+      border: none;
+    }
+  }
+}
+
+/***
+
+====================================================================
+Circle Box
+====================================================================
+
+***/
+
+.circle-box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+
+  .circle-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    svg {
+      width: 100%;
+      height: 100%;
+      transform: rotate(135deg);
+      animation: rotate 30s linear infinite;
+    }
+    textPath {
+      fill: var(--theme-color-white);
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: 6px;
+    }
+    .highlight {
+      fill: var(--text-color);
+    }
+  }
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .highlight-arc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+
+// Gsap animation ***
+.des-work-wrap {
+  .des-work-panel {
+    margin-bottom: 30px !important;
+  }
+}
+
+.tp-stacked-content {
+  position: relative;
+}
+
+.tp-stacked-card {
+  position: relative;
+  transform-origin: top center;
+  will-change: transform;
+}
+
+/***
+
+====================================================================
+Objects and Shadows
+====================================================================
+
+***/
+
+.objects-and-shadows {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+
+  // Objects
+  .h3-object1 {
+    position: absolute;
+    top: 18%;
+    left: -120px;
+    z-index: -1;
+  }
+
+  .h3-fire {
+    position: absolute;
+    top: 18%;
+    right: 0;
+    z-index: -1;
+  }
+
+  .h3-object2 {
+    position: absolute;
+    top: 47%;
+    right: -100px;
+    z-index: -1;
+  }
+
+  .h3-object3 {
+    position: absolute;
+    top: 66%;
+    left: -90px;
+    z-index: -1;
+  }
+
+  .h3-object4 {
+    position: absolute;
+    top: 80%;
+    right: 0px;
+    z-index: -1;
+  }
+
+  .h3-object5 {
+    position: absolute;
+    bottom: 10%;
+    left: 0px;
+    z-index: -1;
+  }
+
+  .h3-shape1 {
+    position: absolute;
+    top: 47%;
+    left: 0px;
+    z-index: -1;
+  }
+
+  .h4-object1 {
+    position: absolute;
+    top: 8%;
+    right: -200px;
+    z-index: -1;
+  }
+
+  .h4-object2 {
+    position: absolute;
+    top: 17%;
+    right: -80px;
+    z-index: -1;
+  }
+
+  .h4-object3 {
+    position: absolute;
+    top: 53%;
+    right: -60px;
+    z-index: -1;
+  }
+
+  .h4-object4 {
+    position: absolute;
+    top: 63%;
+    left: -100px;
+    z-index: -1;
+  }
+
+  .h4-shape1 {
+    position: absolute;
+    top: 8%;
+    left: 0px;
+    z-index: -1;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  // Shadows
+  .h3-shadow1 {
+    position: absolute;
+    top: 23%;
+    left: 0px;
+    z-index: -2;
+  }
+
+  .h3-shadow2 {
+    position: absolute;
+    top: 31%;
+    right: 0px;
+    z-index: -2;
+  }
+
+  .h3-shadow3 {
+    position: absolute;
+    top: 43%;
+    right: 0px;
+    z-index: -2;
+  }
+
+  .h3-shadow-center {
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+  }
+
+  .h3-shadow4 {
+    position: absolute;
+    top: 55%;
+    right: 0px;
+    z-index: -2;
+  }
+
+  .h4-shadow1 {
+    position: absolute;
+    top: 8%;
+    left: 0px;
+    z-index: -2;
+  }
+
+  .h4-shadow2 {
+    position: absolute;
+    top: 23%;
+    left: 0px;
+    z-index: -2;
+  }
+
+  .h4-shadow3 {
+    position: absolute;
+    top: 60%;
+    left: 0px;
+    z-index: -2;
+  }
+
+  .h4-shadow4 {
+    position: absolute;
+    top: 15%;
+    right: 0px;
+    z-index: -2;
+  }
+
+  .h4-shadow5 {
+    position: absolute;
+    top: 40%;
+    right: 0px;
+    z-index: -2;
+  }
+
+
+  @include media-breakpoint-down(xxl) {
+    display: none;
+  }
+}

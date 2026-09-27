@@ -1,0 +1,47 @@
+/*** 
+
+====================================================================
+    Subscribe Section
+====================================================================
+
+***/
+
+/*** 
+
+====================================================================
+    Subscribe Section Two
+====================================================================
+
+***/
+
+.subscribe-section-two {
+	.inner-box {
+		padding: 25px 80px;
+		background: linear-gradient(90deg, #c7dc49 0%, #deffe5 100%);
+        border: 1px solid rgba(106, 151, 116, 0.502);
+        border-radius: 30px;
+        background-repeat: no-repeat;
+	}
+	.content-column {
+		.inner-column {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+			.icon {
+				min-width: 138px;
+				height: 138px;
+				line-height: 138px;
+				text-align: center;
+				border-radius: 50%;
+				background-color: var(--theme-color1);
+			}
+
+            .title{
+                margin: 0;
+                font-size: 40px;
+                line-height: 50px;
+            }
+		}
+	}
+}

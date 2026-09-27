@@ -1,0 +1,79 @@
+/***
+
+==================================================================
+    Video Section
+==================================================================
+
+***/
+
+.video-section {
+  overflow: hidden;
+  padding: 0 12px;
+
+  .outer-container {
+    position: relative;
+    z-index: 1;
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 1820px;
+    margin: 0 auto;
+
+    .marquee-section-three-light {
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      .marquee {
+        .text {
+          font-size: 180px;
+          line-height: 1;
+          font-weight: 600;
+          text-transform: capitalize;
+          margin: 0 20px;
+
+          svg {
+            display: inline-block;
+            margin-right: 30px;
+          }
+        }
+      }
+
+      @include media-breakpoint-down(xl) {
+        bottom: -20px;
+        .marquee {
+          .text {
+            font-size: 120px;
+
+            svg {
+              width: 80px;
+              height: 80px;
+            }
+          }
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        bottom: -10px;
+        .marquee {
+          .text {
+            font-size: 80px;
+            margin: 0 10px;
+
+            svg {
+              width: 50px;
+              height: 50px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .image {
+    img {
+      width: 100%;
+    }
+  }
+}
